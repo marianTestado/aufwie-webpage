@@ -110,6 +110,13 @@ body{
     color: rgb(255, 134, 154);
     height: 40px;
     cursor: pointer;
+    transition: color 0.3s ease,background-color 0.3s ease, border 0.3s ease; 
+}
+
+.buttons button:hover{
+    border: 1px solid white;
+    background-color: rgb(255, 134, 154);
+    color: white;
 }
 
 .date-info #date-location{
