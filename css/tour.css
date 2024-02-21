@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    font-size: 30px;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.header:not(.hidden) {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+#left-header{
+    display: flex;
+    margin-top: 20px;
+    gap: 100px;
+
+}
+
+#right-header{
+    display: flex;
+    margin-top: 20px;
+    gap: 100px;
+
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-style: oblique 50deg;
+}
+
+#left-header a:hover,
+#right-header a:hover{
+    color: rgb(255, 134, 154);
+    transform: scale(1.2, 1);
+}
+
+#aufwie-logo{
+    width: 300px;
+}
+
+.content {
+    text-align: center;
+    margin: 20px; 
+}
+
+#tour-title{
+    margin-top: 100px;
+    letter-spacing: 4px;
+    color: rgb(255, 134, 154);
+}
+
+.dates{
+    display: flex;
+    flex-direction:  column;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.date{
+    display: flex;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 1px solid rgb(255, 134, 154) ;
+    
+}
+
+.date-info{
+    margin-right: auto;
+}
+
+.buttons{
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button{
+    
+    border: 1px solid rgb(255, 134, 154);
+    background-color: white;
+    font-weight: bold;
+    color: rgb(255, 134, 154);
+    height: 40px;
+    cursor: pointer;
+}
+
+.date-info #date-location{
+    
+    color: rgb(255, 134, 154);
+}
