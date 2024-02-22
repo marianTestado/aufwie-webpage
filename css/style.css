@@ -65,8 +65,7 @@ body{
     width: 300px;
 }
 
-#test{
-    height: 1000px;
-    background-color: rebeccapurple;
-    padding: 1000px;
+#page-title{
+    margin-top: 100px;
+    margin-bottom: 0;
 }
