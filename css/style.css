@@ -6,6 +6,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
+    
+}
+
+::selection {
+    background-color: rgb(255, 134, 154);
+    color: white;
 }
 
 .header {
@@ -68,4 +74,12 @@ body{
 #page-title{
     margin-top: 100px;
     margin-bottom: 0;
+}
+
+#album-cover{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    -webkit-box-shadow: 3px 2px 15px 8px rgba(0,0,0,0.53); 
+    box-shadow: 3px 2px 15px 8px rgba(0,0,0,0.53);
+
 }
